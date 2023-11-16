@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+:root{
+    --font-logo: 'sans-serif';
+    --secondary-font: 'Courier Prime', monospace;
+    --main-color: black;
+    --secondary-color: black;
+
+}
+
+body{
+    background-color: var(--main-color);
+    height: auto;
+
+}
+
+.body-inicio{
+    background-color: black;
+
+}
+
+.name-page{
+    font-family: var(--font-logo);
+    font-size: 35px;
+    color: var(--secondary-color);
+
+}
+
+.font-logo{
+    font-family: var(--font-logo);
+
+}
+
+.secondary-font {
+    font-family: var(--secondary-font);
+    font-size: 35px;
+    color: white;
+    
+}
+
+.text-center m-1 {
+    font-size: 10px;
+    text-decoration-color: white;
+}
+
+.container-form-register{
+    box-shadow: 1px 3px 8px 10px #E404FF;
+    margin: 0px auto 0;
+    width: 720px;
+    height: 550px;
+    padding: 20px;
+    padding-left: 0;
+    background-color: white;
+
+}
+
+.container-form-login{
+    box-shadow: 1px 3px 8px 10px #E404FF;
+    margin: 0px auto 0;
+    width: 720px;
+    height: 510px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+.section-posts{
+    height: 1500px;
+    box-shadow: 1px 3px 8px 10px rgba(20, 20, 20, 0.3);
+    background-color: var(--secondary-color);
+    
+}
+
+.section-comments{
+    padding-top: 20px;
+    width: 1140px;
+    box-shadow: 3px 8px 10px rgba(20, 20, 20, 0.3);
+    background-color: var(--secondary-color);
+
+}
+
+.date-post{
+    font-size: 30px;
+
+}
+
+.content-post{
+    margin: 20px;
+    line-height: 50px;
+    padding: 6px;
+
+}
+
+.nothing-for-today{
+    width: 1000px;
+    height: 1000px;
+
+}
+
+.bg-post{
+    background-color: #E404FF;
+
+}
+
+.title-create-post{
+    font-size: 27px;
+
+}
+
+.container-form-post{
+    box-shadow: 1px 3px 8px 10px rgba(20, 20, 20, 0.3);
+    margin: 0px auto 0;
+    width: 720px;
+    height: 800px;
+    padding: 20px;
+    padding-left: 0;
+    background-color: var(--secondary-color);
+
+}
+.border-darker {
+    background-color:#E404FF;
+    height: 500px
+}
+
+.border-dark {
+    background-color:#E404FF
+}
+
+.button-custom {
+    background-color: #E404FF ; /* Cambia el color al que prefieras, este es un tono de azul */
+    color: #ffffff; /* Cambia el color del texto del botón */
+  }
+
+/* Estilo para el fondo del formulario */
+.bg-success {
+    background-color: #E404FF; /* Puedes cambiar este color al que desees */
+    color: #fff; /* Cambia el color del texto para que sea legible en el fondo */
+  }
+  
+  /* Estilo para el botón de Publicar */
+  .btn-info {
+    background-color: #E404FF; /* Cambia el color de fondo del botón */
+    border-color: #E404FF; /* Cambia el color del borde del botón */
+    color: #fff; /* Cambia el color del texto del botón */
+  }
+  
+  /* Estilo para el texto del título del formulario */
+  .secondary-font {
+    color: white; /* Cambia el color del texto del título */
+  }
+  
+  /* Estilo para el borde del formulario */
+  .container-form-post {
+    border: 2px solid #E404FF; /* Cambia el color del borde del formulario */
+  }
+  
+  /* Estilo para el fondo del botón cuando se coloca el cursor sobre él */
+  .btn-info:hover {
+    background-color: #2939b3; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  }
+  
+/* Estilo para el texto dentro de la barra de navegación */
+.navbar-brand,
+.name-page,
+.nav-link {
+    color: white !important; /* Cambiar el color del texto a blanco */
+}
+
+/* Estilo para el separador vertical (vr) */
+.vr {
+    background-color: white; /* Cambiar el color del separador a blanco */
+}
+
+/* Estilo para el texto Bienvenido */
+.nav-link.text-warning {
+    color: white !important; /* Cambiar el color del texto a blanco */
+}
+
+/* Estilo para el texto Registrarse e Iniciar Sesión */
+.nav-link.text-warning.m-3 {
+    color: white !important; /* Cambiar el color del texto a blanco */
+}

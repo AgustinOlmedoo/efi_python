@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block title %} • Inicio Sesión {% endblock %}
+
+{% block body %}
+
+<body>
+  <main class="d-flex flex-column justify-content-center align-items-center vh-100">
+    <div class="row align-items-center bg-success">
+      <div class="container-form-login">    
+        <h1 class="text-center secondary-font p-1"><i>Inicia sesiónes</i></h1>
+        <br>   
+          <div class="row justify-content-center">
+              <form action='/userLogIn' method='POST'>
+                <div class="mb-3 text-center p-2">
+                  <label for="nameUserLogin" class="form-label"><i>Nombre de usuario</i></label>
+                  <input type="text" class="form-control" name="nameUserLogin" id="nombre" required placeholder="Ingrese su nombre de usuario">
+                </div>
+                <div class="mb-3 text-center p-2">
+                  <label for="passwordUserLogin" class="form-label"><i>Contraseña</i></label>
+                  <input type="password" class="form-control" name="passwordUserLogin" id="contrasena" required placeholder="Ingrese su contraseña">
+                </div>
+                
+                <div class="d-flex justify-content-center align-items-center p-5">
+                  <button class="btn btn-info border border-dark" type=”submit”><i>Iniciar Sesión</i></button>
+                </div>
+              </form>
+          </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+{% endblock %}

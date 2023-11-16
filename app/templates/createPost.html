@@ -1,0 +1,48 @@
+{% extends 'otroLayout/layout.html' %}
+
+{% block title %} • Crear publicación {% endblock %}
+
+{% block body %}
+
+
+    <main class="d-flex flex-column justify-content-center align-items-center p-5 vh-90">
+      <div class="row align-items-center bg-success ">
+        <div class="container-form-post">    
+          <h1 class="text-center secondary-font p-1"><i>Crea tu publicación</i></h1>
+          <br> 
+            <div class="row justify-content-center">
+              <form action="/createPost" method="POST">
+                <div class="form-group text-center p-2">
+                  <label for="titlePost"><i>Titulo</i></label>
+                  <input required type="text" class="form-control" name="titlePost" minlength="10" maxlength="100" required placeholder="Título del posteo">
+                </div>
+                <div class="form-group text-center p-2">
+                  <label for="categorySelector"><i>Categoría:</i></label>
+                  <select class="m-3" name="categorySelector">
+                  {% for category in categories %}
+                    <option value="{{category.idCategoria}}">{{category}}</option>
+                  {% endfor %}
+                  </select>
+                </div>
+                <div class="form-group text-center p-2">
+                  <label for="message"><i>Publicación</i></label>
+                  <textarea required class="form-control" name="commentPost" cols="40" rows="5" minlength="10" maxlength="300" style="resize: both;" required placeholder="Escribe tu consulta"></textarea>
+                  <div class="invalid-feedback">
+                    Please enter a message.
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center p-3">
+                  <button type="submit" class="btn btn-info border border-dark"><i>Publicar</i></button>
+                </div>
+              </form>              
+            </div> 
+      </div>
+    </main>
+
+<br>
+<br>
+<br>
+
+{% endblock %}
+  
+      <br><br><br><hr>
